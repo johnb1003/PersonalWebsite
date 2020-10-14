@@ -1,6 +1,6 @@
 const BOARD_SIZE = 4;
 const NEW_TILE_DELAY = 150; // ms
-const LOSE_DELAY = 1500; // ms
+const LOSE_DELAY = 1000; // ms
 
 class GameBoard {
     constructor(dimensions) {
