@@ -7,13 +7,19 @@ var MAX_SWAPS = 2;
 var currUpdated = false;
 
 async function nameIntro() {
-    changeLetters();
-    await sleep(2000);
-    //console.log("After sleep 1");
-    changeLetters();
-    await sleep(2000);
-    //console.log("After sleep 2");
-    changeLetters();
+    await changeLetters();
+    await sleep(200);
+    $('#lock-image').addClass('shake');
+    await sleep(600);
+    $('#lock-image').removeClass('shake');
+    await sleep(400);
+    await changeLetters();
+    await sleep(200);
+    $('#lock-image').addClass('shake');
+    await sleep(600);
+    $('#lock-image').removeClass('shake');
+    await sleep(400);
+    await changeLetters();
 }
 
 async function changeLetters() {
@@ -27,7 +33,6 @@ async function changeLetters() {
 }
 
 function fillNextLetters() {
-    console.log("Fill next");
     if(letterSwaps >= MAX_SWAPS) {
         nextLetters = finalLetters;
         return;
@@ -43,7 +48,6 @@ function fillNextLetters() {
 }
 
 function updateCurrLetters() {
-    console.log("Update curr");
     let updated = false;
     for(let i=0; i<currLetters.length; i++) {
         if(currLetters[i] < nextLetters[i]) {
@@ -59,16 +63,15 @@ function updateCurrLetters() {
 }
 
 function showLetters(letterArr) {
-    console.log("Show");
-    let lettersHTML = '';
+    let lettersHTML = '<div id="first-name">';
     for(let i=0; i<letterArr.length; i++) {
         if(i === 4) {
-            lettersHTML += `<div class="letter-container"><p class="letter" id="letter-4">&nbsp;</p></div>`;
+            lettersHTML += `</div><div class="letter-container" id="name-space"><p class="letter" id="letter-4">&nbsp;</p></div><div id="last-name">`;
             continue;
         }
         lettersHTML += `<div class="letter-container"><p class="letter" id="letter-${i}">${letters[letterArr[i]]}</p></div>`;
     }
-
+    lettersHTML += `</div>`;
     $('#name-container').html(lettersHTML);
 }
 
