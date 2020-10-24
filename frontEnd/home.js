@@ -10,16 +10,26 @@ async function nameIntro() {
     await changeLetters();
     await sleep(200);
     $('#lock-image').addClass('shake');
-    await sleep(600);
+    await sleep(400);
     $('#lock-image').removeClass('shake');
     await sleep(400);
     await changeLetters();
     await sleep(200);
     $('#lock-image').addClass('shake');
-    await sleep(600);
+    await sleep(400);
     $('#lock-image').removeClass('shake');
     await sleep(400);
     await changeLetters();
+    await sleep(800);
+    await explodeAnimation();
+
+}
+
+async function explodeAnimation() {
+    $('#lock-image').addClass('explode');
+    await sleep(1000)
+    $('#lock-image').removeClass('explode');
+    $('#intro-container').css('display', 'none');
 }
 
 async function changeLetters() {
