@@ -30,6 +30,7 @@ async function explodeAnimation() {
     await sleep(800)
     $('#lock-image').removeClass('explode');
     $('#intro-container').css('display', 'none');
+    $('.main').css('display', 'flex');
 }
 
 async function changeLetters() {

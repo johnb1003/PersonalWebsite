@@ -19,12 +19,60 @@ html,body {
     height: 100vh;
 }
 
+.main {
+    display: none;
+}
+
 #nav-bar {
+    position: absolute;
+    top: 0;;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
     width: 100%;
     display: none;
+}
+
+#main-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url('resources/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid rgb(44, 44, 44);
+    display: none;
+}
+
+#main-name-container {
+    width: fit-content;
+    height: fit-content;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#portfolio-image {
+    height: 60vh;
+    width: auto;
+}
+
+#contact-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contact-icon {
+    margin: 0 1rem;
+    border: 2px solid black;
 }
 
 #intro-container {
@@ -38,11 +86,8 @@ html,body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /*
-    background: #757F9A;
-    background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A);
-    background: linear-gradient(to bottom, #D7DDE8, #757F9A);
-    */
+    background-color: #222222;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 
 }
 
@@ -55,6 +100,8 @@ html,body {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: white;
+    font-weight: 800;
 }
 
 #first-name {
@@ -94,6 +141,21 @@ html,body {
         padding: .5rem 2rem;
     }
 
+    #main-name {
+        font-size: 8rem;
+        padding: 2rem .5rem 0 .5rem;
+    }
+
+    #main-title {
+        font-size: 4rem;
+        padding: 0 .5rem;
+    }
+
+    .contact-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
     #name-container {
         height: 90%;
     }
@@ -121,6 +183,24 @@ html,body {
     .nav-button {
         font-size: 1.2rem;
         padding: .5rem 1rem;
+    }
+
+    #main-name {
+        font-size: 3rem;
+        padding: .5rem;
+    }
+
+    #main-title {
+        font-size: 2rem;
+    }
+
+    #portfolio-image {
+        display: none;
+    }
+
+    .contact-icon {
+        width: 3rem;
+        height: 3rem;
     }
 
     #name-container {
