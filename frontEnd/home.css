@@ -147,7 +147,7 @@ html,body {
 }
 
 .explode {
-    animation: explode 1s;
+    animation: explode .8s;
     animation-iteration-count: 1;
 }
 
@@ -165,6 +165,6 @@ html,body {
 }
 
 @keyframes explode {
-    80% { transform:scale(.5); }
+    90% { transform:scale(.5); }
     100% { transform:scale(10); }
 }

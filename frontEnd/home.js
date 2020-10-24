@@ -27,7 +27,7 @@ async function nameIntro() {
 
 async function explodeAnimation() {
     $('#lock-image').addClass('explode');
-    await sleep(1000)
+    await sleep(800)
     $('#lock-image').removeClass('explode');
     $('#intro-container').css('display', 'none');
 }
