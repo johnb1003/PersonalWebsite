@@ -7,6 +7,7 @@ var MAX_SWAPS = 2;
 var currUpdated = false;
 
 async function nameIntro() {
+    /*
     await changeLetters();
     await sleep(200);
     $('#lock-image').addClass('shake');
@@ -22,7 +23,11 @@ async function nameIntro() {
     await changeLetters();
     await sleep(800);
     await explodeAnimation();
+    */
 
+    // DEV PURPOSES ONLY
+    $('#intro-container').css('display', 'none');
+    $('.main').css('display', 'flex');
 }
 
 async function explodeAnimation() {

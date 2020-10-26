@@ -10,14 +10,19 @@
         <!-- Corresponding js and css files -->
         <link rel="stylesheet" type="text/css" href="home.css">
         <script type="text/javascript" src="home.js"></script>
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div id="top-panel">
             <nav class="main" id="nav-bar">
+                <p id="open-for-work">Currently open for work!</p>
+                <!-- 
                 <button class="nav-button" id="projects-button">Projects</button>
                 <button class="nav-button" id="skills-button">Skills</button>
                 <button class="nav-button" id="contact-button">Contact</button>
+                -->
             </nav>
             <div id="intro-container">
                 <div id="name-container">
@@ -39,17 +44,92 @@
                 <img src="resources/lock.png" alt="lock image" id="lock-image">
             </div>
             <div class="main" id="main-container">
-                <img src="resources/portfolio-image.png" alt="portfolio image" id="portfolio-image">
+                <img src="resources/portfolio-image.png" alt="portfolio image" id="portfolio-image-pc">
                 <div id="main-name-container">
                     <h1 id="main-name">John Burns</h1>
                     <h2 id="main-title">Software Engineer</h2>
-                    <div id="contact-container">
-                        <div class="contact-icon">Email</div>
-                        <div class="contact-icon">Git</div>
-                        <div class="contact-icon">Linked</div>
-                        <div class="contact-icon">Phone</div>
+                    <img src="resources/portfolio-image.png" alt="portfolio image" id="portfolio-image-mobile">
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="socials-container">
+                    
+                <a href="mailto:johnburnsdev@gmail.com" class="social-container">
+                    <img src="resources/icons/email.svg" alt="icon" class="socials-image">
+                    <p class="social-label">johnburnsdev@gmail.com</p>
+                </a>
+            
+                <a href="https://www.linkedin.com/in/john-burns-dev" class="social-container" target="_blank">
+                    <img src="resources/icons/linkedin.svg" alt="icon" class="socials-image">
+                    <p class="social-label">/in/john-burns-dev</p>
+                </a>
+                
+                <a href="https://github.com/johnb1003" class="social-container" target="_blank">
+                    <img src="resources/icons/github.svg" alt="icon" class="socials-image">
+                    <p class="social-label">/johnb1003</p>
+                </a>
+
+                <a href="resources/John-Burns-resume.pdf" class="social-container" target="_blank">
+                    <img src="resources/icons/resume.svg" alt="icon" class="socials-image">
+                    <p class="social-label">Resume</p>
+                </a>
+                
+            </div>
+            <div id="projects-container">
+                <h1 class="content-header" id="projects-header">Projects</h1>
+                <div id="show-projects-container">
+                    <div class="project" id="reflectme">
+                        ReflectMe
+                    </div>
+                    <div class="project" id="elena">
+                        EleNa
                     </div>
                 </div>
+            </div>
+            <div id="skills-container">
+                <h1 class="content-header" id="skills-header">Skills</h1>
+                <div id="show-skills-container">
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                    <div class="skill-container">
+                        <p class="skill-name">Skill</p>
+                        <img src="resources/lock.png" alt="image" class="skill-image">
+                    </div>
+                </div>
+            </div>
+            <div id="contact-container">
+                <h1 class="content-header" id="contact-header">Contact</h1>
             </div>
         </div>
     </body>
