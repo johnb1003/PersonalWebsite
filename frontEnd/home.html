@@ -12,6 +12,8 @@
         <script type="text/javascript" src="home.js"></script>
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- EmailJS for contact form -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     </head>
 
     <body>
@@ -75,6 +77,31 @@
                     <p class="social-label">Resume</p>
                 </a>
                 
+            </div>
+            <div id="education-container">
+                <h1 class="content-header" id="education-header">Education</h1>
+                <div id="education-umass-container">
+                    <div id="school-details">
+                        <p id="degree-pc">Bachelor of Science in Computer Science</p>
+                        <p id="degree-mobile">B.S. in CS</p>
+                        <p id="school-name-pc">University of Massachusetts Amherst</p><p id="chc">, Commonwealth Honors College</p>
+                        <p id="school-name-mobile">UMass Amherst</p>
+                        <div id="graduation-date-container">
+                            <div id="graduation-row">
+                                <img src="resources/icons/calendar.svg" alt="Calendar icon" id="calendar-icon">
+                                <p id="graduation-date-text">May 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="gpa-container">
+                        <p id="gpa-label">GPA</p>
+                        <div id="gpa-number-container">
+                            <p id="gpa-number">3.3</p>
+                            <p id="gpa-out-of">&nbsp;&nbsp;/&nbsp;&nbsp;4</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="projects-container">
                 <h1 class="content-header" id="projects-header">Projects</h1>
@@ -148,6 +175,33 @@
             </div>
             <div id="contact-container">
                 <h1 class="content-header" id="contact-header">Contact</h1>
+                <div id="email-me-container">
+                    <h2 class="project-title" id="email-me">Shoot me an email!</h2>
+                    <div id="email-container">
+                        <div id="to-container" class="email-section">
+                            <p class="email-section-label">To:</p>
+                            <p class="email-input">johnburnsdev@gmail.com</p>
+                        </div>
+                        <div id="from-container" class="email-section">
+                            <label class="email-section-label" for="email-from">From:</label>
+                            <input type="text" name="email-from" class="email-input" id="email-from" placeholder="Name / Email / Phone #">
+                        </div>
+                        <div id="subject-container" class="email-section">
+                            <label class="email-section-label" for="email-subject">Subject:</label>
+                            <input type="text" name="email-subject" class="email-input" id="email-subject" placeholder="Let's collaborate!">
+                        </div>
+                        <div id="message-container" class="email-section">
+                            <label class="email-section-label" for="email-message">Message:</label>
+                            <textarea type="text" name="email-message" class="email-input" id="email-message"></textarea>
+                        </div>
+                        <div id="submit-container" class="email-section">
+                            <button id="email-submit-button">Send Email</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-container">
+                
             </div>
         </div>
     </body>

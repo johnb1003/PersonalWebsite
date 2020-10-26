@@ -1,4 +1,4 @@
-*,p,button {
+*,p,button, input {
     padding: 0;
     margin: 0;
     border: none;
@@ -11,6 +11,15 @@ html,body {
     min-width: 100%;
     height: fit-content;
     min-height: 100%;
+}
+
+input:focus, textarea, button {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 a {
@@ -126,12 +135,116 @@ a {
     width: 2.2rem;
     height: 2.2rem;
     margin-right: .4rem;
-    fill: rgb(211, 211, 211);
 }
 
 .socials-label {
     font-size: 1.5rem;
     color: rgb(190, 190, 190);
+}
+
+#education-container {
+    width: 100%;
+    height: fit-content;
+}
+
+#education-umass-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 1rem 2rem;
+}
+
+#degree-pc {
+    font-size: 2rem;
+}
+
+#degree-mobile {
+    font-size: 2rem;
+    display: none;
+}
+
+#school-name-pc {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+}
+
+#school-name-mobile {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+    display: none;
+}
+
+#chc {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+}
+
+#graduation-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-top: .2rem;
+}
+
+#calendar-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: .5rem;
+}
+
+#graduation-date-text {
+    font-size: 1.3rem;
+}
+
+#gpa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: #65696d;
+    font-weight: 400;
+    border-left: 3px solid black;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+#gpa-label {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    opacity: .9;
+    font-weight: 600;
+}
+
+#gpa-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#gpa-number {
+    color: #252525;
+    font-weight: 700;
+}
+
+#gpa-out-of {
+    color: #252525;
+    font-weight: 700;
+}
+
+#projects-container {
+    background-color: rgb(206, 206, 206);
 }
 
 #show-projects-container {
@@ -171,6 +284,11 @@ a {
     min-height: 100%;
 }
 
+#skills-container {
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+}
+
 #show-skills-container {
     max-width: 100%;
     height: fit-content;
@@ -179,11 +297,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-start;
-    background-color: rgb(206, 206, 206);
-}
-
-#skills-header {
-    background-color:rgb(206, 206, 206);
+    background-color: rgb(201, 201, 201);
 }
 
 .skill-container {
@@ -206,6 +320,90 @@ a {
     height: 10rem;
     width: 10rem;
     /*border: 2px solid black;*/
+}
+
+#contact-container {
+    width: 100%;
+    background-color: rgb(196, 196, 196);
+    padding-bottom: 2rem;
+}
+
+#email-me-container {
+    width: 80%;
+    height: fit-content;
+    margin: 2rem auto;
+}
+
+#email-container {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.email-section-label {
+    font-size: 1.2rem;
+}
+
+.email-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 2px solid rgba(63, 63, 63, 0.747);
+    padding: .5rem 2rem;
+}
+
+.email-input {
+    width: 100%;
+    padding: .1rem .5rem .1rem .5rem;
+    font-size: 1rem;
+}
+
+#to-container {
+    border-radius: 1rem 1rem 0 0;
+}
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: none;
+}
+
+#message-container label {
+    margin-bottom: .4rem;
+}
+
+#email-message {
+    font-size: 1.5rem;
+    background-color: rgb(241, 241, 241);
+    height: 8rem;
+    overflow: auto;
+    resize: none;
+}
+
+#submit-container {
+    justify-content: flex-end;
+    border: none;
+}
+
+#email-submit-button {
+    background-color: #3239bb;
+    color: white;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+}
+
+#bottom-container {
+    width: 100%;
+    height: fit-content;
+    height: 20vh;
+    background-color: rgb(29, 29, 29);
+    border-top: 5px solid rgb(102, 102, 102);
 }
 
 #intro-container {
@@ -275,18 +473,6 @@ a {
     color: rgb(43, 214, 0);
 }
 
-#projects-container {
-    width: 100%;
-}
-
-#skills-container {
-    width: 100%;
-}
-
-#contact-container {
-    width: 100%;
-}
-
 #main-container {
     display: none;
 }
@@ -347,7 +533,35 @@ a {
 
     .content-header {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    #chc {
+        display: none;
+    }
+
+    .email-section {
+        padding: 1rem 1rem;
+    }
+
+    .email-input {
+        font-size: 1.2rem;
+    }
+
+    .email-section-label {
+        font-size: 1.4rem;
+    }
+
+    #email-message {
+        height: 15rem;
+    }
+
+    #submit-container {
+        padding: .5rem 1rem;
+    }
+
+    #email-submit-button {
+        padding: .5rem 1rem;
     }
 }
 
@@ -359,6 +573,22 @@ a {
 
     #nav-bar {
         display: none;
+    }
+
+    #degree-pc {
+        display: none;
+    }
+    
+    #degree-mobile {
+        display: block;
+    }
+
+    #school-name-pc {
+        display: none;
+    }
+
+    #school-name-mobile {
+        display: block;
     }
 }
 
@@ -398,7 +628,7 @@ a {
 
     .content-header {
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .project {
