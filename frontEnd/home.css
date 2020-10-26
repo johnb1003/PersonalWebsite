@@ -300,8 +300,12 @@ a {
 
 /* Mobile format */
 @media screen and (max-width: 1200px) {
+    #main-container {
+        min-height: unset;
+    }
+
     #main-name-container {
-        min-height: 70vh;
+        min-height: fit-content;
     }
 
     #portfolio-image-pc {
