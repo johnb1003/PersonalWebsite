@@ -14,17 +14,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- EmailJS for contact form -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_C1CqKuly0eGBzsrvOc6IZ");
+            })();
+        </script>
     </head>
 
     <body>
         <div id="top-panel">
             <nav class="main" id="nav-bar">
                 <p id="open-for-work">Current Position: Open for work!</p>
-                <!-- 
-                <button class="nav-button" id="projects-button">Projects</button>
-                <button class="nav-button" id="skills-button">Skills</button>
-                <button class="nav-button" id="contact-button">Contact</button>
-                -->
             </nav>
             <div id="intro-container">
                 <div id="name-container">
@@ -184,24 +184,46 @@
                         </div>
                         <div id="from-container" class="email-section">
                             <label class="email-section-label" for="email-from">From:</label>
-                            <input type="text" name="email-from" class="email-input" id="email-from" placeholder="Name / Email / Phone #">
+                            <input type="text" name="email-from" class="email-input" id="email-from" placeholder="Valid email">
                         </div>
                         <div id="subject-container" class="email-section">
                             <label class="email-section-label" for="email-subject">Subject:</label>
-                            <input type="text" name="email-subject" class="email-input" id="email-subject" placeholder="Let's collaborate!">
+                            <input type="text" name="email-subject" class="email-input" id="email-subject" placeholder="Let's connect!">
                         </div>
                         <div id="message-container" class="email-section">
                             <label class="email-section-label" for="email-message">Message:</label>
                             <textarea type="text" name="email-message" class="email-input" id="email-message"></textarea>
                         </div>
                         <div id="submit-container" class="email-section">
+                            <div id="error-message-container">
+                                <p class="error-message" id="error-message-email" style="display: none;">Invalid Email</p>
+                                <p class="error-message" id="error-message-message" style="display: none;">Message can't be empty</p>
+                            </div>
                             <button id="email-submit-button">Send Email</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="bottom-container">
-                
+                <div id="links-container">
+                    <p id="links-header">Links</p>
+                    <div id="links-columns-container">
+                        <div class="links-column">
+                            <a href="2048.html" class="link" id="2048" target="_blank">2048</a>
+                            <a href="" class="link" id="wholag" target="_blank">wholag</a>
+                        </div>
+                        <div class="links-column">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="made-container">
+                    <div id="love-sentence">
+                        <p class="made-with-love">Made with</p> 
+                        <img src="resources/icons/love.svg" alt="Heart icon" id="love-icon"> 
+                        <p class="made-with-love">by JMB</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
