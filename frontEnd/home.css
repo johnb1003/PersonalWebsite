@@ -720,8 +720,13 @@ a {
         margin: 2rem auto;
     }
 
+    #intro-container {
+        justify-content: flex-start;
+    }
+
     #name-container {
-        height: 94%;
+        height: fit-content;
+        margin-top: 2rem;
     }
 
     .letter-container {
@@ -733,8 +738,10 @@ a {
     }
 
     #lock-image {
-        width: 100%;
-        height: auto;
+        max-height: 30vh;
+        width: auto;
+        max-width: 90vw;
+        margin-top: 1rem;
     }
 }
 
@@ -763,5 +770,5 @@ a {
 
 @keyframes explode {
     90% { transform:scale(.5); }
-    100% { transform:scale(10); }
+    100% { transform:scale(20); }
 }
