@@ -653,6 +653,13 @@ a {
     #school-name-mobile {
         display: block;
     }
+
+    #lock-image {
+        max-height: 34vh;
+        width: auto;
+        max-width: 90vw;
+        margin-top: 1rem;
+    }
 }
 
 /* Mobile format */
@@ -735,13 +742,6 @@ a {
 
     #name-space {
         display: none;
-    }
-
-    #lock-image {
-        max-height: 30vh;
-        width: auto;
-        max-width: 90vw;
-        margin-top: 1rem;
     }
 }
 
