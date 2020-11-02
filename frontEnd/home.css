@@ -322,9 +322,50 @@ a {
     /*border: 2px solid black;*/
 }
 
+#arcade-container {
+    background-color: rgb(196, 196, 196);
+}
+
+#show-games-container {
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.game {
+    height: fit-content;
+    width: 40vw;
+    overflow: hidden;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.game-title {
+    font-size: 2rem;
+    padding: .3rem 0;
+    color: rgb(66, 66, 66);
+}
+
+.game-image-container {
+    height: 40vh;
+    width: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
 #contact-container {
     width: 100%;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(191, 191, 191);
     padding-bottom: 1rem;
 }
 
@@ -702,6 +743,13 @@ a {
     }
 
     .project {
+        width: 95vw;
+        height: fit-content;
+        margin: 1rem;
+        overflow: hidden;
+    }
+
+    .game {
         width: 95vw;
         height: fit-content;
         margin: 1rem;
