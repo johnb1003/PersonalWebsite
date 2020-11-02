@@ -1,9 +1,0 @@
-[submodule "frontEnd/arcade/Snake"]
-	path = frontEnd/arcade/Snake
-	url = https://github.com/johnb1003/Snake.git
-[submodule "frontEnd/arcade/2048"]
-	path = frontEnd/arcade/2048
-	url = https://github.com/johnb1003/2048.git
-[submodule "frontEnd/arcade/mineSweeper"]
-	path = frontEnd/arcade/mineSweeper
-	url = https://github.com/johnb1003/mineSweeper.git
